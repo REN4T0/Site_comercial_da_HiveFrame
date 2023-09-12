@@ -1,0 +1,25 @@
+#banner{
+  width: 100%;
+  height: 30rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  background: linear-gradient(180deg, #002137 24.63%, rgba(0, 33, 55, 0.90) 48.29%, rgba(0, 33, 55, 0.75) 64.66%, rgba(0, 33, 55, 0.50) 79.46%, rgba(0, 33, 55, 0.25) 90.03%, rgba(0, 33, 55, 0.00) 100%);  
+}
+
+#conteudo{
+    margin-left: 5%;
+}
+
+#tituloPrincipal{
+    font-size: 55px;
+    font-weight: 100;
+    
+    margin-bottom: 8px;
+}
+
+#subtituloPrincipal{
+    font-weight: 300;
+}

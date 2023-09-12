@@ -1,0 +1,272 @@
+main{
+    margin-top: 70px;
+}
+
+#computador{
+    width: 7rem;
+    height: 7rem;
+
+    margin-right: 2rem;
+}
+
+#descricao{
+    width: 70%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 5%;
+}
+
+#textoDescricao{
+    font-size: 20px;
+    
+    text-align: justify;
+}
+
+#setaBaixo{
+    width: 2rem;
+    height: 2rem;
+
+    display: block;
+    margin: auto;
+
+    padding-top: 1rem;
+
+    position: relative;
+    animation: apontarParaBaixo 1s ease-in-out infinite;
+}
+
+/* Animação da seta */
+@keyframes apontarParaBaixo {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+
+
+
+
+#investidores{
+    margin-top: 40px;
+}
+
+#cabecalhoInvestidores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#tituloInvestidores{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#logoInvestidores{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-top: 50px;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+
+.linhaHorizontal{
+    width: 30%;
+    height: 1px;
+
+    margin: 1rem;
+
+    background-color: #000;
+}
+
+.logoInvestidor{
+    width: 25%;
+}
+
+
+
+
+#principios{
+    width: 100%;
+    margin-top: 50px;
+
+    background: linear-gradient(61deg, #13405F 30.73%, rgba(19, 64, 95, 0.75) 100%);
+
+    border-radius: 50px 50px 0px 0px;
+}
+
+#tituloPrincipios{
+    text-transform: uppercase;
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+
+
+
+#containerCard{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-bottom: 40px;
+}
+
+.card{
+    width: 20%;
+    height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 20px;
+    padding: 15px;
+    
+    background-color: rgb(255, 255, 255, 10%);
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    border-radius: 20px;
+}
+
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+    width: 100px;
+
+    margin: auto;
+
+    background-color: #fff;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    border-radius: 10px;
+}
+
+.iconeCard{
+    height: 80px;
+    width: 80px;
+}
+
+.cardTitle{
+    font-size: 20px;
+    text-align: center;
+
+    margin: 25px;
+}
+
+.cardText{
+    display: block;
+    margin: 15px;
+
+    /* text-align: justify; */
+
+}
+
+
+
+
+
+.divisoria{
+    width: 85%;
+
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+#containerHabilidades{
+    margin-top: 40px;
+    margin-left: 5%;
+}
+
+#colunaHabilidades{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#tituloHabilidades{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.hexagono{
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.heximagem{
+    width: 70%;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+
+#habilidade1{
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+
+#habilidade2{
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+
+#habilidade3{
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+
+.textoHabilidades{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.tracos{
+    width: 1px;
+    height: 75px;
+
+    margin-left: 39.5px;
+
+    background: #D9D9D9;
+}

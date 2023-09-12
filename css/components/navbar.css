@@ -1,0 +1,13 @@
+#navbar{
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #002137;
+}
+
+#logo{
+    width: 15%;
+}
