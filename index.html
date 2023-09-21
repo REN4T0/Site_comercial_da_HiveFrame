@@ -6,11 +6,15 @@
     <title>HiveFrame</title>
 
     <script src="/js/animation/esmaecer.js" defer></script>
+    <script src="/js/script.js" defer></script>
     
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
+
     <link rel="stylesheet" href="/css/components/navbar.css">
     <link rel="stylesheet" href="/css/components/header.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/components/modal.css">
+
 </head>
 <body>
     <header>
@@ -86,9 +90,9 @@
 
             <hr class="divisoria">
 
-            <div id="containerHabilidades">
-                <h2 id="tituloHabilidades" class="corLetra">O que está incluido nos sistemas que desenvolvemos?</h2>
+            <h2 id="tituloHabilidades" id="tituloHabilidades" class="corLetra">O que está incluido nos sistemas que desenvolvemos?</h2>
 
+            <div id="containerHabilidades">
                 <div id="colunaHabilidades">
                     <div class="habilidades" id="habilidade1">
                         <svg class="hexagono" xmlns="http://www.w3.org/2000/svg" width="80" height="95" viewBox="0 0 57 65" fill="none">
@@ -120,12 +124,22 @@
                 </div>
 
                 <div id="colunaPitch">
-                    <iframe src="https://www.veed.io/embed/b9646a16-9737-463b-a96e-0a498894bb1d" width="744" height="504" frameborder="0" title="Cópia de Orange Grey Medical Presentation" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <h2 id="tituloPitch" class="corLetra">Veja o nosso último projeto</h2>
+                    <div>
+                        <img id="imgVideoPitch" src="/images/img/Captura de tela 2023-09-21 151210.png" alt="Vídeo do pitch da hiveframe" onclick="abrirModal()">
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <div id="fundo">
+        <div id="modal">
+            <button id="fechaModal" onclick="fechaModal()">x</button>
+            <iframe id="pitch" src="https://www.youtube.com/embed/xxjhxwOYJ1E?si=-c27grydHgDzSPb6" title="Vídeo do pitch do projeto da HiveFrame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    
     <footer>
 
     </footer>
