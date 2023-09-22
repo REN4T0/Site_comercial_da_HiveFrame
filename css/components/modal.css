@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 #fundo{
     height: 100%;
     width: 100%;
@@ -13,6 +15,8 @@
     top: 0;
 
     opacity: 0;
+
+    transition: 0.3s;
 }
 
 #modal{
@@ -30,10 +34,30 @@
     padding-right: 2rem;
     
     z-index: 2;
+
+    border-radius: 10px;
 }
 
 #fechaModal{
     align-self: flex-end;
+
+    width: 2rem;
+    height: 2rem;
+
+    padding-left: 1px;
+    padding-top: 0.2px;
+
+    border: 2px solid #d30000;
+    border-radius: 5rem;
+
+    background-color: #fff;
+
+    font-weight: bold;
+    font-family: 'rubik', sans-serif;
+    font-size: 1rem;
+    color: #d30000;
+
+    transition: 0.2s;
 }
 
 #pitch{
@@ -41,4 +65,11 @@
     height: 80%;
 
     margin-top: 10px;
+
+    border-radius: 10px;
+}
+
+#fechaModal:hover{
+    background-color: #d30000;
+    color: #fff;
 }

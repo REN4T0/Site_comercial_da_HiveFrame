@@ -98,6 +98,7 @@ main{
 
 
 
+
 #principios{
     width: 100%;
     margin-top: 50px;
@@ -125,12 +126,14 @@ main{
     flex-direction: row;
     justify-content: space-around;
 
+    /* flex-wrap: wrap; */
+
     margin-bottom: 40px;
 }
 
 .card{
-    width: 20%;
-    height: 20rem;
+    width: 15%;
+    height: 15rem;
 
     display: flex;
     flex-direction: column;
@@ -199,31 +202,29 @@ main{
 
 
 #tituloHabilidades{
-    margin-left: 5%;
+    /* margin-left: 12%; */
     margin-top: 40px;
+
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
 #containerHabilidades{
     margin-top: 40px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+
+
+
 
 #colunaHabilidades{
     display: flex;
     flex-direction: column;
-}
-
-
-
-
-
-#tituloHabilidades{
-    text-transform: uppercase;
-    margin-bottom: 40px;
 }
 
 .hexagono{
@@ -284,12 +285,147 @@ main{
 
 
 
-#colunaPitch{
-    margin-right: 5%;
-
-}
 
 #tituloPitch{
     font-weight: 300;
     margin-bottom: 5px;
+
+    margin-top: 4cm;
+}
+
+/* RESPONSIVIDADE */
+
+/* Mudando o tamanho desse título */
+@media(max-width: 1545px){
+    #tituloHabilidades{
+        font-size: 20px !important;
+    }
+
+}
+
+@media(max-width: 1175px){
+    #tituloHabilidades{
+        font-size: 15px !important;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mudando a direção do container e o título do pitch */
+@media(max-width: 1015px){
+    #containerHabilidades{
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    #tituloPitch{
+        margin-top: 5rem;
+    }
+}
+
+/* Alterando o ttamanho da linha horizontal e a seta para baixo */
+@media(max-width: 1040px){
+    .linhaHorizontal{
+        width: 20%;
+    }
+}
+
+@media(max-width: 710px){
+    .linhaHorizontal{
+        display: none;
+    }
+
+    #setaBaixo{
+        display: none;
+    }
+}
+
+/* Mudando o tamanho das imagens no card */
+@media(max-width: 1425px){
+    .card{
+        width: 25%;
+    }
+}
+
+@media(max-width: 800px){
+    .icone{
+        height: 70px;
+        width: 70px;
+    }
+
+    .iconeCard{
+        height: 40px;
+        width: 40px;
+    }
+
+    .cardTitle{
+        font-size: 17px;
+    }
+}
+
+/* Alterando a descrição */
+@media(max-width: 930px){
+    #computador{
+        display: none;
+    }
+
+    #descricao{
+        width: 90%;
+    }
+}
+
+/* Celular */
+
+@media(max-width: 665px){
+    #containerCard{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 60%;
+    }
+
+    .icone{
+        height: 90px;
+        width: 90px;
+    }
+
+    .iconeCard{
+        height: 70px;
+        width: 70px;
+    }
+
+    .cardTitle{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 340px){
+    .card{
+        height: 12rem;
+    }
+
+    .icone{
+        height: 60px;
+        width: 60px;
+    }
+
+    .iconeCard{
+        height: 40px;
+        width: 40px;
+    }
+
+    .cardTitle{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 445px){
+    #textoDescricao{
+        font-size: 15px;
+    }
+
+    #tituloInvestidores{
+        font-size: 30px;
+    }
 }

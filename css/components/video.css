@@ -1,0 +1,67 @@
+#imgVideoPitch{
+    width: 40rem;
+    border-radius: 10px;
+
+    /* align-self: center; */
+
+}
+
+#containerPlayVideo{
+    width: 40rem;
+    height: 310px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    z-index: 1;
+
+    opacity: 0;
+    transition: 0.5s;
+
+    border-radius: 10px;
+}
+
+#botaoPlay{
+    width: 7rem;
+}
+
+#containerPlayVideo:hover{
+    opacity: 1;
+    background-color: rgb(25, 25, 25, 70%);
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 1355px){
+    #imgVideoPitch{
+        width: 30rem;
+    }
+
+    #containerPlayVideo{
+        width: 30rem;
+        height: 232.5px;
+    }
+}
+
+@media(max-width: 590px){
+    #imgVideoPitch{
+        width: 20rem;
+    }
+
+    #containerPlayVideo{
+        width: 20rem;
+        height: 155px;
+    }
+}
+
+@media(max-width: 390px){
+    #imgVideoPitch{
+        width: 15rem;
+    }
+
+    #containerPlayVideo{
+        width: 15rem;
+        height: 116.25px;
+    }
+}

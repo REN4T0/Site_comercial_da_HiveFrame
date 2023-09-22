@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/components/navbar.css">
     <link rel="stylesheet" href="/css/components/header.css">
     <link rel="stylesheet" href="/css/components/modal.css">
+    <link rel="stylesheet" href="/css/components/video.css">
 
 </head>
 <body>
@@ -24,8 +25,8 @@
 
         <div id="banner">
             <div id="conteudo">
-                <h1 id="tituloPrincipal" class="corLetra">Juntos, podemos desenvolver harmonia</h1>
-                <p id="subtituloPrincipal" class="corLetra">O objetivo da HiveFrame é ajudar a tornar o ambiente corporativo organizado e conciliador com base no desenvolvimeto de softwares que forneçam isso.</p>
+                <h1 id="tituloPrincipal" class="corLetra inserirPaddingRight">Juntos, podemos desenvolver harmonia</h1>
+                <p id="subtituloPrincipal" class="corLetra inserirPaddingRight">O objetivo da HiveFrame é ajudar a tornar o ambiente corporativo organizado e conciliador com base no desenvolvimeto de softwares que forneçam isso.</p>
             </div>
         </div>
     </header>
@@ -65,7 +66,7 @@
                     </div>
 
                     <p class="cardTitle corLetra">Desenvolvimento Ágil</p>
-                    <p class="cardText corLetra">Trabalhamos de maneira flexível, para atendender os requisitos solicitados pelo cliente dentro do prazo.</p>
+                    <!-- <p class="cardText corLetra">Trabalhamos de maneira flexível, para atendender os requisitos solicitados pelo cliente dentro do prazo.</p> -->
                 </div>
             
                 <div class="card">
@@ -74,7 +75,7 @@
                     </div>
 
                     <p class="cardTitle corLetra">Planejamento Econômico</p>
-                    <p class="cardText corLetra">Analisamos possibilidades de desenvolvimento que tenham um bom custo benefício no uso da aplicação.</p>
+                    <!-- <p class="cardText corLetra">Analisamos possibilidades de desenvolvimento que tenham um bom custo benefício no uso da aplicação.</p> -->
                 </div>
 
                 <div class="card">
@@ -83,17 +84,17 @@
                     </div>
 
                     <p class="cardTitle corLetra">Compromisso</p>
-                    <p class="cardText corLetra">Somos responsáveis com nossos clientes. Nosso objetivo é superar suas expectativas.</p>
+                    <!-- <p class="cardText corLetra">Somos responsáveis com nossos clientes. Nosso objetivo é superar suas expectativas.</p> -->
                 </div>
             </div>
             <!-- Término dos cards -->
 
             <hr class="divisoria">
 
-            <h2 id="tituloHabilidades" id="tituloHabilidades" class="corLetra">O que está incluido nos sistemas que desenvolvemos?</h2>
-
+            
             <div id="containerHabilidades">
                 <div id="colunaHabilidades">
+                    <h2 id="tituloHabilidades" id="tituloHabilidades" class="corLetra">O que está incluido nos sistemas que desenvolvemos?</h2>
                     <div class="habilidades" id="habilidade1">
                         <svg class="hexagono" xmlns="http://www.w3.org/2000/svg" width="80" height="95" viewBox="0 0 57 65" fill="none">
                             <path d="M28.5 0L56.6458 16.25V48.75L28.5 65L0.354174 48.75V16.25L28.5 0Z" fill="white"/>
@@ -125,9 +126,11 @@
 
                 <div id="colunaPitch">
                     <h2 id="tituloPitch" class="corLetra">Veja o nosso último projeto</h2>
-                    <div>
-                        <img id="imgVideoPitch" src="/images/img/Captura de tela 2023-09-21 151210.png" alt="Vídeo do pitch da hiveframe" onclick="abrirModal()">
+                    <div id="containerPlayVideo" onclick="abrirModal()">
+                        <img id="botaoPlay" src="/images/icons/play.png" alt="botão para iniciar o vídeo">
                     </div>
+
+                    <img id="imgVideoPitch" src="/images/img/Captura de tela 2023-09-21 151210.png" alt="Vídeo do pitch da hiveframe">
                 </div>
             </div>
         </div>
@@ -135,7 +138,7 @@
 
     <div id="fundo">
         <div id="modal">
-            <button id="fechaModal" onclick="fechaModal()">x</button>
+            <input type="button" id="fechaModal" value="X" onclick="fechaModal()">
             <iframe id="pitch" src="https://www.youtube.com/embed/xxjhxwOYJ1E?si=-c27grydHgDzSPb6" title="Vídeo do pitch do projeto da HiveFrame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>

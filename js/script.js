@@ -10,6 +10,6 @@ function abrirModal(){
 function fechaModal(){
     modal.style.opacity = 0;
     modal.style.zIndex = -1;
-    document.body.style.overflow = "scroll";
+    document.body.style.overflowY = "scroll";
     video.setAttribute('src', video.getAttribute('src'));
 }
