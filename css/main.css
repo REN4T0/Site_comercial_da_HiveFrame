@@ -433,19 +433,23 @@ main{
 #equipe{
     display: flex;
     flex-direction: column;
-    padding: 4% 15%;
+    padding-top: 5%;
 }
 
 .labelEquipe{
     color: orange;
     font-weight: bold;
     align-self: center;
+    padding: 0rem 1rem;
+    text-align: center;
 }
 
 .boxEquipe{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
     padding: 2rem;
 }
 
@@ -453,7 +457,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: 13rem;
     margin-top: 2rem;
 }
 
